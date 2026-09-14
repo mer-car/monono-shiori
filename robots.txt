@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# 公開時に build_site.py --base-url でSitemap絶対URLを確定
