@@ -50,3 +50,28 @@ footer{border-top-color:var(--navy)}
 @media(max-width:420px){.visual-genre-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-genre{aspect-ratio:4/3}.featured-balanced .story{grid-template-columns:104px minmax(0,1fr)!important}.featured-balanced .story-thumb,.featured-balanced .story:first-child .story-thumb{min-height:96px}.cta-photo{height:165px}.cta-photo .cta-overlay>strong{font-size:15px}}
 .home-first-head h1{font-size:20px;line-height:1.6;margin:0;font-weight:800}
 @media(max-width:680px){.home-first-head h1{font-size:18px}}
+
+/* v6: smartphone 2-column pickup cards + clearer Mercari CTA */
+.cta-wrap{margin:26px 0 30px}.cta-wrap .cta-photo{margin:0}.cta-guide{margin:0 2px 9px!important;font-size:12px!important;line-height:1.65!important;color:#53615c}.cta-photo{display:block;text-decoration:none;color:#fff}.cta-photo:hover{color:#fff}.cta-overlay{pointer-events:none}.cta-keyword{display:block;width:100%;max-width:82%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cta-keyword-long{font-size:18px!important}.cta-keyword-xlong{font-size:15px!important}.cta-button{pointer-events:none}
+@media(max-width:680px){
+  .featured-balanced{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .featured-balanced .story{display:block!important;min-height:0!important;grid-template-columns:none!important}
+  .featured-balanced .story-thumb,.featured-balanced .story:first-child .story-thumb{height:auto!important;min-height:0!important;aspect-ratio:16/10!important}
+  .featured-balanced .story-content{padding:8px 9px 10px}
+  .featured-balanced .story p{display:none}
+  .featured-balanced .story h3,.featured-balanced .story:first-child h3{font-size:12px;line-height:1.5;font-weight:700;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .featured-balanced .story-meta{font-size:7.5px;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .featured-balanced .genre-icon{width:19px!important;height:19px!important;font-size:10px!important;flex:0 0 auto}
+  .featured-balanced .thumb-source{left:5px;bottom:5px;max-width:calc(100% - 10px);font-size:6.5px;padding:3px 5px}
+  .cta-wrap{margin:20px -2px 25px}.cta-guide{font-size:11px!important;margin:0 3px 7px!important}
+  .cta-keyword{max-width:100%;font-size:14px!important}.cta-keyword-long{font-size:12.5px!important}.cta-keyword-xlong{font-size:11px!important}
+}
+@media(max-width:420px){
+  .featured-balanced{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .featured-balanced .story{grid-template-columns:none!important}
+  .featured-balanced .story-thumb,.featured-balanced .story:first-child .story-thumb{min-height:0!important;aspect-ratio:16/10!important}
+  .featured-balanced .story-content{padding:7px 8px 9px}
+  .featured-balanced .story h3,.featured-balanced .story:first-child h3{font-size:11.5px;line-height:1.48}
+  .featured-balanced .story-meta{font-size:7px}.featured-balanced .genre-icon{width:18px!important;height:18px!important;font-size:9px!important}
+  .cta-guide{font-size:10.5px!important}.cta-keyword{font-size:13px!important}.cta-keyword-long{font-size:11.5px!important}.cta-keyword-xlong{font-size:10.5px!important}
+}
